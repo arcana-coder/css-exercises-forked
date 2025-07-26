@@ -8,16 +8,20 @@ body {
   font-weight: 800;
 }
 
+.para {
+  font-size: 22px;
+}
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
+/*based on the solution i should place the .small-para element after the .para element group 
+for text, according to the rule of specificity , 
+or giving it a higher specificity by chaining the selector
+it with the paragraph selector,p.small-para selector
+i used a universal selector in my own case*/
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -35,7 +39,7 @@ body {
   font-size: 14px;
 }
 
-div.text {
+div{
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
